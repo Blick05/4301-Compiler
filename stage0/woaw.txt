@@ -1,0 +1,8 @@
+rm -f *.o core *~  stage0
+rm -f 
+g++ -g -Wall -std=c++11 -c stage0main.C -I/usr/local/4301/include/ -I.
+g++ -g -Wall -std=c++11 -c stage0.cpp -I/usr/local/4301/include/ -I.
+g++ -o stage0 stage0main.o stage0.o -L/usr/local/4301/lib/ -lm
+to use type in the data files name without extension e.g 001 or 102
+they will be placed in the testing folder
+Enter more arguements
